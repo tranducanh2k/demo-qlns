@@ -1,0 +1,9 @@
+.content {
+    width: 85%;
+    height: 800px;
+}
+
+.content .text {
+    display: flex;
+    padding-left: 20px;
+}

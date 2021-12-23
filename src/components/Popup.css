@@ -1,0 +1,63 @@
+.popup {
+    position: fixed;
+    box-shadow: 2px 5px 9px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    left: 30%;
+    top: 150px;
+    height: 500px;
+    width: 400px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.popup .title {
+    zoom: 1.5;
+    color: red;
+    position: relative;
+    left: 28%;
+}
+
+.popup .search {
+    padding-top: 20px;
+}
+
+.popup .search input {
+    position: relative;
+    bottom: 7px;
+    width: 50%;
+    height: 30px;
+    font-size: large;
+}
+
+.popup .list {
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.popup .okButton {
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+    color: white;
+    background-color: rgb(63, 81, 181);
+    border-radius: 3px;
+    border: none;
+    transform: scale(2);
+}
+
+.popup button:hover {
+    filter: brightness(200%);
+}
+
+.popup .search .findButton {
+    position: relative;
+    left: 30px;
+    bottom: 7px;
+    color: white;
+    background-color: rgb(63, 81, 181);
+    border-radius: 3px;
+    border: none;
+    transform: scale(2);
+}

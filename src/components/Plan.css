@@ -1,0 +1,10 @@
+.plan .tablePlan th,td,table{
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+.plan {
+    padding-left: 30px;
+}
+

@@ -1,0 +1,14 @@
+.link {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.link .text {
+    color: white;
+    text-decoration: none;
+}
+
+.MuiAccountBoxIcon-root {
+    color: white;
+}

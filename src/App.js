@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Content from "./components/Content";
+import NavLink from "./components/Link";
+import Plan from './components/Plan';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="navbar">
+        <div className="title">
+          <div className="titleText"> DX workplace </div>
+        </div>
+      </div>
+      
+      <div className="body">
+        <BrowserRouter>
+          <div className="sidebar">
+            <Link to='/'>
+              <NavLink text={"Quản lý nhân sự"} />
+            </Link>
+            <Link to='/bangtin'>
+              <NavLink text={"Bảng tin quản lý nhân sự"} />
+            </Link>
+            <Link to='/kehoachlamviec'>
+              <NavLink text={"Quản lý kế hoạch làm việc"} />
+            </Link>
+          </div>
+          <div className="content">
+              <Routes>
+                <Route path="/bangtin" element={<Content />} />
+                <Route path='/kehoachlamviec' element={<Plan />} />
+              </Routes>
+          </div>
+        </BrowserRouter>
+      </div>
+      
+      <div className="footer"></div>
     </div>
   );
 }
