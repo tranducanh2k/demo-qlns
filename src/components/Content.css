@@ -6,4 +6,9 @@
 .content .text {
     display: flex;
     padding-left: 20px;
+    position: relative;
+    top: 19.5rem;
+    left: 3.5rem;
+    background-color: white;
+    padding: 10px;
 }

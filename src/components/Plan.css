@@ -4,7 +4,11 @@
     
 }
 
-.plan {
-    padding-left: 30px;
+.tablePlan {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
+.plan .title {
+    margin-left: 2rem;
+}

@@ -3,6 +3,7 @@ import "./App.css";
 import Content from "./components/Content";
 import NavLink from "./components/Link";
 import Plan from './components/Plan';
+import NavbarImage from './assets/navbar.png';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <div className="title">
           <div className="titleText"> DX workplace </div>
         </div>
+        <img src={NavbarImage} alt="navbar" width='85%' />
       </div>
       
       <div className="body">

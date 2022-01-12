@@ -1,6 +1,8 @@
 import React from 'react'
 import './Plan.css';
 import RenderTableData from './RenderTableData';
+import plan1 from '../assets/plan1.png';
+import plan2 from '../assets/plan2.png';
 
 const Plan = () => {
 
@@ -15,6 +17,8 @@ const Plan = () => {
 
     return (
         <div className='plan'>
+            <img src={plan1} alt='plan1' width='100%'/>
+
             <h1 className='title'>
                 Tổng hợp nhân viên
             </h1>
@@ -41,6 +45,8 @@ const Plan = () => {
                     }
                 </tbody>
             </table>
+
+            <img src={plan2} alt='plan2' width='100%' />
         </div>
     )
 }
