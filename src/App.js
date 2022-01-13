@@ -28,6 +28,15 @@ function App() {
             <Link to='/kehoachlamviec'>
               <NavLink text={"Quản lý kế hoạch làm việc"} />
             </Link>
+            <Link to='/'>
+              <NavLink text={"Thống kê bấm giờ nhân sự"} />
+            </Link>
+            <Link to='/'>
+              <NavLink text={"Thêm nhân viên"} />
+            </Link>
+            <Link to='/'>
+              <NavLink text={"Quản lý thông tin nhân viên"} />
+            </Link>
           </div>
           <div className="content">
               <Routes>
