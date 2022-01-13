@@ -42,12 +42,12 @@ export const data = {
     {
       label: 'Nghi co phep',
       data: labels.map(() => faker.datatype.number({ min: 0, max: 30 })),
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      backgroundColor: 'rgb(32,116,180)',
     },
     {
       label: 'Nghi khong phep',
       data: labels.map(() => faker.datatype.number({ min: 0, max: 30 })),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      backgroundColor: '#ff7c0c',
     },
   ],
 };
