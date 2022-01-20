@@ -10,6 +10,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import faker from 'faker';
+import { Brightness1 } from '@material-ui/icons';
 
 ChartJS.register(
   CategoryScale,

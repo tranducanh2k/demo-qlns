@@ -12,3 +12,8 @@
     background-color: white;
     padding: 10px;
 }
+
+.content .chart {
+    cursor: pointer;
+    margin-bottom: 30px;
+}

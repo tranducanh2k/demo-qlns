@@ -37,6 +37,7 @@
 }
 
 .popup .okButton {
+    cursor: pointer;
     position: absolute;
     bottom: 20px;
     left: 45%;
@@ -52,6 +53,7 @@
 }
 
 .popup .search .findButton {
+    cursor: pointer;
     position: relative;
     left: 30px;
     bottom: 7px;

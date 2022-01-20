@@ -4,6 +4,7 @@ import Content from "./components/Content";
 import NavLink from "./components/Link";
 import Plan from './components/Plan';
 import NavbarImage from './assets/navbar.png';
+import Homepage from "./components/Homepage";
 
 function App() {
 
@@ -19,27 +20,31 @@ function App() {
       <div className="body">
         <BrowserRouter>
           <div className="sidebar">
-            <Link to='/'>
-              <NavLink text={"Quản lý nhân sự"} />
+            <Link to='/' className="sideLink">
+              <NavLink text={"Home page"} />
             </Link>
-            <Link to='/bangtin'>
+            <Link to='/bangtin' className="sideLink">
+              <NavLink text={"Quản lý nhân sự"}  />
+            </Link>
+            <Link to='/bangtin' className="sideLink">
               <NavLink text={"Bảng tin quản lý nhân sự"} />
             </Link>
-            <Link to='/kehoachlamviec'>
+            <Link to='/kehoachlamviec' className="sideLink">
               <NavLink text={"Quản lý kế hoạch làm việc"} />
             </Link>
-            <Link to='/'>
+            <Link to='/' className="sideLink">
               <NavLink text={"Thống kê bấm giờ nhân sự"} />
             </Link>
-            <Link to='/'>
+            <Link to='/' className="sideLink">
               <NavLink text={"Thêm nhân viên"} />
             </Link>
-            <Link to='/'>
+            <Link to='/' className="sideLink">
               <NavLink text={"Quản lý thông tin nhân viên"} />
             </Link>
           </div>
           <div className="content">
               <Routes>
+                <Route path="/" element={<Homepage />} />
                 <Route path="/bangtin" element={<Content />} />
                 <Route path='/kehoachlamviec' element={<Plan />} />
               </Routes>
